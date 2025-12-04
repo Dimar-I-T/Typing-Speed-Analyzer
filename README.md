@@ -16,3 +16,9 @@ Typing Speed Analyzer adalah sistem digital yang dirancang untuk mengukur kecepa
 - Modul Perbandingan Teks
 - Modul Perhitungan WPM dan Akurasi
 - Modul Output Hasil
+
+## Kontributor
+- Dimar Ilham Tamara (2406413804)
+- Fernanda Raeka Yan Putra (2406415791)
+- Gogra Friedrik Simatupang (2406487020)
+- Naufal Rahman (2406413142)
