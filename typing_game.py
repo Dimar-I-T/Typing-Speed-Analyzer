@@ -172,19 +172,19 @@ def main():
 
         # SIMPAN LAPORAN KE FILE 
         report_content = f"""
-            ==================================================
-                    LAPORAN HASIL TYPING SPEED GAME          
-            ==================================================
-            Tanggal       : {time.strftime('%Y-%m-%d %H:%M:%S')}
+        ==================================================
+        LAPORAN HASIL TYPING SPEED GAME          
+==================================================
+Tanggal       : {time.strftime('%Y-%m-%d %H:%M:%S')}
 
-            LAPORAN PERFORMA:
-            -----------------
-            Waktu         : {elapsed_sec:.2f} detik
-            Kecepatan     : {wpm:.1f} WPM | {cpm:.0f} CPM
-            Akurasi       : {accuracy:.1f} %
-            Jumlah Typo   : {final_typos} 
-            ==================================================
-        """
+LAPORAN PERFORMA:
+-----------------
+Waktu         : {elapsed_sec:.2f} detik
+Kecepatan     : {wpm:.1f} WPM | {cpm:.0f} CPM
+Akurasi       : {accuracy:.1f} %
+Jumlah Typo   : {final_typos} 
+==================================================
+"""
         write_to_file(FILE_RESULT, report_content.strip(), 'w')
         
         print(f"\n[SUKSES] Laporan singkat tersimpan di:\n{os.path.join(XSIM_FOLDER, FILE_RESULT)}")
