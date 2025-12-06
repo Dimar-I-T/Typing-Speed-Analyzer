@@ -19,31 +19,31 @@ Typing Speed Analyzer adalah sistem digital yang dirancang untuk mengukur kecepa
 
 ## Implementasi Modul
 - Dataflow Style
-  <br> <img width="831" height="145" alt="image" src="https://github.com/user-attachments/assets/bd5c4495-42c3-486a-a837-cafb04c6d26d" />
+  <br> <img width="831" height="145" alt="image" src="https://github.com/user-attachments/assets/bd5c4495-42c3-486a-a837-cafb04c6d26d" /> <br>
   Dataflow digunakan untuk menetapkan nilai sinyal secara concurrent (bersamaan) tanpa menunggu clock, seperti menghubungkan sinyal internal ke port output utama.
 
 - Behavorial Style
-  <br> <img width="532" height="527" alt="image" src="https://github.com/user-attachments/assets/4a57f2f3-e842-453f-92d3-bec169253f56" />
+  <br> <img width="532" height="527" alt="image" src="https://github.com/user-attachments/assets/4a57f2f3-e842-453f-92d3-bec169253f56" /> <br>
   Behavioral digunakan di dalam blok process untuk mendeskripsikan algoritma kompleks secara berurutan (sekuensial), seperti logika pengecekan huruf dan penghitungan counter.
 
 - Testbench
   <br> <img width="527" height="132" alt="image" src="https://github.com/user-attachments/assets/f5b4cd90-d6d3-4b99-a460-a8b883b6016c" />
-  <img width="505" height="468" alt="image" src="https://github.com/user-attachments/assets/15519e4b-167b-46ee-9e26-09f0842bde1d" />
+  <img width="505" height="468" alt="image" src="https://github.com/user-attachments/assets/15519e4b-167b-46ee-9e26-09f0842bde1d" /> <br>
   Testbench dirancang sebagai modul penguji tanpa port input/output fisik, yang bertugas membangkitkan sinyal simulasi untuk memverifikasi sistem dan berinteraksi dengan lingkungan eksternal (Python) melalui mekanisme I/O file untuk simulasi Hardware-in-the-Loop (HIL).
 
 - Structural Programming
   <br> <img width="502" height="67" alt="image" src="https://github.com/user-attachments/assets/3b44265c-ca1e-4a8e-ac60-d227479f67ab" />
-  <img width="633" height="481" alt="image" src="https://github.com/user-attachments/assets/eedb9afc-8d45-4ffe-8b74-52c140a541fb" />
+  <img width="633" height="481" alt="image" src="https://github.com/user-attachments/assets/eedb9afc-8d45-4ffe-8b74-52c140a541fb" /> <br>
   Pemrograman struktural digunakan pada modul top-level untuk merakit dan menghubungkan komponen-komponen kecil (Timer dan Analyzer) menjadi satu sistem yang utuh. Sinyal internal seperti elapsed_ms_sig digunakan sebagai "kabel" untuk menghubungkan output dari satu modul ke input modul lainnya melalui mekanisme port map.
 
 - Looping Construct
-  <br> <img width="892" height="382" alt="image" src="https://github.com/user-attachments/assets/27a66f30-03da-4cce-b4f6-a9ef696ebf3a" />
+  <br> <img width="892" height="382" alt="image" src="https://github.com/user-attachments/assets/27a66f30-03da-4cce-b4f6-a9ef696ebf3a" /> <br>
   While loop digunakan secara intensif dalam testbench untuk membaca file input karakter demi karakter secara terus-menerus hingga simulasi selesai.
 
 - Procedure, Function, and Impure Function
   <br> <img width="677" height="93" alt="image" src="https://github.com/user-attachments/assets/79bbc232-7844-4203-9c82-e1d6fdcbf2f3" />
   <img width="846" height="77" alt="image" src="https://github.com/user-attachments/assets/424eb3d9-4a4b-47f2-9dc9-ad10679a341a" />
-  <img width="871" height="52" alt="image" src="https://github.com/user-attachments/assets/a6294913-cf32-403c-b3d8-22e2196990c7" />
+  <img width="871" height="52" alt="image" src="https://github.com/user-attachments/assets/a6294913-cf32-403c-b3d8-22e2196990c7" /> <br>
   Menerapkan Function (to_integer) untuk mengonversi tipe data sinyal menjadi integer agar bisa diproses, Procedure (write) untuk menyusun string dan data ke dalam variabel buffer baris (Line), serta Impure Procedure (writeline) yang memiliki side effect untuk menuliskan baris tersebut secara fisik ke file eksternal.
 
 ## Kontributor
